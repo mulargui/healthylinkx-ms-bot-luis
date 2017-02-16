@@ -1,0 +1,186 @@
+{
+  "luis_schema_version": "1.3.1",
+  "versionId": "0.1",
+  "name": "HealthylinkxBot",
+  "desc": "HealthyLinkx helps you find doctors in your area",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "FindDoctors"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "gender"
+    },
+    {
+      "name": "lastname"
+    },
+    {
+      "name": "specialty"
+    },
+    {
+      "name": "zipcode"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [
+    "dimension"
+  ],
+  "actions": [],
+  "model_features": [
+    {
+      "name": "gender",
+      "mode": true,
+      "words": "male,female",
+      "activated": true
+    },
+    {
+      "name": "specialty",
+      "mode": true,
+      "words": "dentist,cardiologist,nurse",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "find nurse in 98007",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "zipcode",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "specialty",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "find cardio doctors 5 miles from 98075",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "zipcode",
+          "startPos": 6,
+          "endPos": 6
+        },
+        {
+          "entity": "specialty",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "find doctor smith in 98005",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "zipcode",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "lastname",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find doctor anderson in 98052",
+      "intent": "FindDoctors",
+      "entities": [
+        {
+          "entity": "zipcode",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "lastname",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find doctors 5 miles from 98074",
+      "intent": "FindDoctors",
+      "entities": [
+        {
+          "entity": "zipcode",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "find female doctors in 98052",
+      "intent": "FindDoctors",
+      "entities": [
+        {
+          "entity": "zipcode",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "gender",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "find male doctors in 98052",
+      "intent": "FindDoctors",
+      "entities": [
+        {
+          "entity": "zipcode",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "gender",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "find doctor anderson",
+      "intent": "FindDoctors",
+      "entities": [
+        {
+          "entity": "lastname",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "find doctor anderson in 98074",
+      "intent": "FindDoctors",
+      "entities": [
+        {
+          "entity": "zipcode",
+          "startPos": 4,
+          "endPos": 4
+        },
+        {
+          "entity": "lastname",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    }
+  ]
+}
