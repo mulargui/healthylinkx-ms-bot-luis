@@ -8,4 +8,6 @@ Healthylinx is a classic three tiers app: front-end (ux), service API and data s
 
 This architecture makes it very adequate to test different technologies and I use it for getting my hands dirty on new stuff. You might needs to combine what is in this repo with other repos if you want to build the app end to end. It is like a lego where you can pick and choose different technologies as you see fit. Enjoy!
 
+This architecture makes it very adequate to test different technologies and I use it for getting my hands dirty on new stuff. You might need to combine what is in this repo with other repos if you want to build the app end to end. It is like a lego where you can pick and choose different technologies as you see fit. Enjoy!
+
 This repo builds a bot interface (microsoft bot framework) integrated with LUIS to support natural language
